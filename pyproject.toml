@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pdf-analysis"
+version = "0.1.0"
+description = ""
+authors = ["Alex Yang <himself65@outlook.com>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+llama-index = "0.9.33a3"
+pypdf = "^4.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+main = "app.main:main"
